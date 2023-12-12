@@ -3,10 +3,10 @@
 void interface_input(char *instruction, size_t size) {
     if (fgets(instruction, size, stdin) == NULL) {
         if (feof(stdin)) {
-            printf("\n");
+            claudio_print("\n");
             exit(EXIT_SUCCESS);
         } else {
-            perror("fgets");
+            claudio_print("error");
             exit(EXIT_FAILURE);
         }
     }
