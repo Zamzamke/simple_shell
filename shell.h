@@ -9,5 +9,6 @@
 void displaying_prompt (void)
 void claudio_print(const char *info)
 void interface_input(char *instruction, size_t size)
+void execute_instruction(const char *instruction)
 
 #endif
